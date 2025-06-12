@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\aes\aes.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\mapping.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\suchoi.cpp" />
+    <ClCompile Include="..\..\AppMain.cpp" />
+    <ClCompile Include="..\..\BMP_Erzeuger.cpp" />
+    <ClCompile Include="..\..\BMP_Erzeuger_SW.cpp" />
+    <ClCompile Include="..\..\determineStackMemoryNeeds.cpp" />
+    <ClCompile Include="..\..\determStackMemory_AppMain.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_BMP_Erzeuger.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_BMP_Erzeuger_SW.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_FunktionalRechner.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_Math.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_OberBMP_Erzeuger.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_Scanner.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_Strings.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_System.ai.cpp" />
+    <ClCompile Include="..\..\determStackMemory_ZKNuetzlich.ai.cpp" />
+    <ClCompile Include="..\..\FunktionalRechner.cpp" />
+    <ClCompile Include="..\..\Math.cpp" />
+    <ClCompile Include="..\..\OberBMP_Erzeuger.cpp" />
+    <ClCompile Include="..\..\placementNewClass_AlphabeticSorter.cpp" />
+    <ClCompile Include="..\..\placementNewClass_AlphaEntry.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Assigner_String_128.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Assigner_String_16.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Benutzer_Umschalter.cpp" />
+    <ClCompile Include="..\..\placementNewClass_BMP_Erzeuger.cpp" />
+    <ClCompile Include="..\..\placementNewClass_BMP_Erzeuger_SW.cpp" />
+    <ClCompile Include="..\..\placementNewClass_CommandlineArgs.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Compare_String_128.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Compare_String_16.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Complex.cpp" />
+    <ClCompile Include="..\..\placementNewClass_FunktionEinleser.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Hashable4.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Hashtable4_Hashable4_KeyType4.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Hash_String_128.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Hash_String_16.cpp" />
+    <ClCompile Include="..\..\placementNewClass_HexPrinter.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Input.cpp" />
+    <ClCompile Include="..\..\placementNewClass_KeyType4.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Logfile.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Main.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Math.cpp" />
+    <ClCompile Include="..\..\placementNewClass_MultiThreadAdmin.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Mutex.cpp" />
+    <ClCompile Include="..\..\placementNewClass_MutexInfo.cpp" />
+    <ClCompile Include="..\..\placementNewClass_NullPtrClassSappeurInternal.cpp" />
+    <ClCompile Include="..\..\placementNewClass_OberBMP_Erzeuger.cpp" />
+    <ClCompile Include="..\..\placementNewClass_PrintfClass.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Scanner.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Semaphore.cpp" />
+    <ClCompile Include="..\..\placementNewClass_SemaphoreInfo.cpp" />
+    <ClCompile Include="..\..\placementNewClass_SPRFile.cpp" />
+    <ClCompile Include="..\..\placementNewClass_StringScanf.cpp" />
+    <ClCompile Include="..\..\placementNewClass_String_128.cpp" />
+    <ClCompile Include="..\..\placementNewClass_String_16.cpp" />
+    <ClCompile Include="..\..\placementNewClass_SystemConstants.cpp" />
+    <ClCompile Include="..\..\placementNewClass_SystemControl.cpp" />
+    <ClCompile Include="..\..\placementNewClass_SystemTime.cpp" />
+    <ClCompile Include="..\..\placementNewClass_ThreadInfo.cpp" />
+    <ClCompile Include="..\..\placementNewClass_ThreadLocalStorage.cpp" />
+    <ClCompile Include="..\..\placementNewClass_ThreadLocalStorageEntry.cpp" />
+    <ClCompile Include="..\..\placementNewClass_ThreadLocalStorageList.cpp" />
+    <ClCompile Include="..\..\placementNewClass_Umgebung.cpp" />
+    <ClCompile Include="..\..\placementNewClass_ZKNuetzlich.cpp" />
+    <ClCompile Include="..\..\Scanner.cpp" />
+    <ClCompile Include="..\..\Strings.cpp" />
+    <ClCompile Include="..\..\System.cpp" />
+    <ClCompile Include="..\..\ZKNuetzlich.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\aes\aes.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\mapping.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\sappeur_config.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\stdafx.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\targetver.h" />
+    <ClInclude Include="..\..\..\ProjektIncludes.h" />
+    <ClInclude Include="..\..\header_AppMain.ai.h" />
+    <ClInclude Include="..\..\header_BMP_Erzeuger.ai.h" />
+    <ClInclude Include="..\..\header_BMP_Erzeuger_SW.ai.h" />
+    <ClInclude Include="..\..\header_FunktionalRechner.ai.h" />
+    <ClInclude Include="..\..\header_Math.ai.h" />
+    <ClInclude Include="..\..\header_OberBMP_Erzeuger.ai.h" />
+    <ClInclude Include="..\..\header_Scanner.ai.h" />
+    <ClInclude Include="..\..\header_Strings.ai.h" />
+    <ClInclude Include="..\..\header_System.ai.h" />
+    <ClInclude Include="..\..\header_ZKNuetzlich.ai.h" />
+    <ClInclude Include="..\..\sizeofAlle.h" />
+    <ClInclude Include="..\..\sizeofDefine_AppMain.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_BMP_Erzeuger.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_BMP_Erzeuger_SW.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_FunktionalRechner.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_Math.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_OberBMP_Erzeuger.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_Scanner.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_Strings.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_System.ai.h" />
+    <ClInclude Include="..\..\sizeofDefine_ZKNuetzlich.ai.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\AlphabeticSorter.ad" />
+    <None Include="..\..\..\AppMain.ad" />
+    <None Include="..\..\..\AppMain.ai" />
+    <None Include="..\..\..\BMP_Erzeuger.ad" />
+    <None Include="..\..\..\BMP_Erzeuger.ai" />
+    <None Include="..\..\..\BMP_Erzeuger_SW.ad" />
+    <None Include="..\..\..\BMP_Erzeuger_SW.ai" />
+    <None Include="..\..\..\FunktionalRechner.ad" />
+    <None Include="..\..\..\FunktionalRechner.ai" />
+    <None Include="..\..\..\Math.ad" />
+    <None Include="..\..\..\Math.ai" />
+    <None Include="..\..\..\OberBMP_Erzeuger.ad" />
+    <None Include="..\..\..\OberBMP_Erzeuger.ai" />
+    <None Include="..\..\..\Scanner.ad" />
+    <None Include="..\..\..\Scanner.ai" />
+    <None Include="..\..\..\String.ad.alt" />
+    <None Include="..\..\..\String.ad.m4" />
+    <None Include="..\..\..\Strings.ad" />
+    <None Include="..\..\..\Strings.ai" />
+    <None Include="..\..\..\Strings.ai.m4" />
+    <None Include="..\..\..\System.ad" />
+    <None Include="..\..\..\System.ai" />
+    <None Include="..\..\..\ZKNuetzlich.ad" />
+    <None Include="..\..\..\ZKNuetzlich.ai" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ff371ada-8cfe-44ae-b401-f00efc25efcc}</ProjectGuid>
+    <RootNamespace>MBSPR</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;WINDOWS_SPR</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..;..\..\..;C:\Sappeur4x\ausg\haupt\cppMapping;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WINDOWS_SPR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>..\..;..\..\..;C:\Sappeur4x\ausg\haupt\cppMapping;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

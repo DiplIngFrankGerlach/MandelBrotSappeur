@@ -1,0 +1,27 @@
+
+/* Einheit zur Erzeugung von BMP-Dateien durch rechnerische Abbildung/Funktion
+   oder durch eine auessere Rechenvorschrift.
+*/
+class BMP_Erzeuger extends OberBMP_Erzeuger
+{
+   *char bildPuffer[];
+   int _breiteZeileOktets;
+   PrintfClass pfc;
+methods:
+   BMP_Erzeuger(int groesseX, int groesseY);
+
+   virtual void erzeugeAnfang();
+
+   void erzeugeSinus();
+
+   void erzeugeAusAbbildung();
+
+   void erzeugeAusAbbildung(&String_16 abbildung,&*char bp[],&int groessePuffer);
+
+   virtual void zeichne(int x, int y, int color_bgr);
+
+   void writeUI32(&int pos,int value);
+
+   virtual int schreibe(&SPRFile ausgabe);
+
+};

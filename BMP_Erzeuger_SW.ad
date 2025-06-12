@@ -1,0 +1,31 @@
+
+/* Einheit zur Erzeugung von zweifarbigen BMP-Dateien durch rechnerische Abbildung/Funktion
+   oder durch eine auessere Rechenvorschrift.
+*/
+class BMP_Erzeuger_SW extends OberBMP_Erzeuger //SW==SchwarzWeiss == Abkuerzung fuer zweifarbig.
+{
+   *char bildPuffer[];
+   int farbe1;
+   int farbe2;
+   int zeilenLaenge;//Laenge einer Zeile im Abbild in Oktets
+   PrintfClass pfc;
+methods:
+   BMP_Erzeuger_SW(int groesseX, int groesseY,int farb1, int farb2);
+
+   virtual void erzeugeAnfang();
+
+   void erzeugeSinus();
+
+   void erzeugeAusAbbildung();
+
+   void erzeugeAusAbbildung(&String_16 abbildung,&*char bp[],&int groessePuffer);
+
+   virtual void zeichne(int x, int y, int color_bgr);
+
+   void writeUI32(&int pos,int value);
+
+   virtual int pufferGroesse();
+
+   virtual int schreibe(&SPRFile ausgabe);
+
+};

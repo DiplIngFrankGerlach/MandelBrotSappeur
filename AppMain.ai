@@ -1,0 +1,166 @@
+Import
+{
+   "Strings.ad",
+   "System.ad",
+   "Math.ad",
+   "OberBMP_Erzeuger.ad",
+   "BMP_Erzeuger.ad",
+   "AppMain.ad"
+
+}
+
+
+// HSV to RGB conversion
+void Main::hsvToRgb(double h, double s, double v, &int r, &int g, &int b) 
+{
+    var double c = v * s;
+    var double x;
+    inline_cpp[[ x= c * (1 - std::fabs(std::fmod(h / 60.0, 2) - 1)); ]]
+    var double m = v - c;
+
+    var double r1;
+    var double g1;
+    var double b1;
+    if (h < 60.0) 
+    { 
+       r1 = c; 
+       g1 = x; 
+       b1 = 0.0; 
+    }
+    else 
+    { 
+       if (h < 120.0) 
+       { 
+          r1 = x; 
+          g1 = c; 
+          b1 = 0.0; 
+       }
+       else 
+       {
+          if (h < 180.0) { r1 = 0.0; g1 = c; b1 = x; }
+          else
+          {
+             if (h < 240.0) { r1 = 0.0; g1 = x; b1 = c; }
+             else
+             {
+                 if (h < 300.0) { r1 = x; g1 = 0.0; b1 = c; }
+                 else { r1 = c; g1 = 0.0; b1 = x; }
+             }
+          }
+       }
+    }
+
+    r = cast(int, ((r1 + m) * 255) ); 
+    r = r & 0xFF;
+    g = cast(int, ((g1 + m) * 255) );
+    g = g & 0xFF;
+    b = cast(int, ((b1 + m) * 255) );
+    b = b & 0xFF;
+}
+
+
+double Main::mandelbrotSmooth(&Complex c) 
+{
+    var Math m;
+    var Complex z(0.0,0.0);
+    var int iter = 0;
+    while ( (z.abs() <= 2.0) && (iter < MAX_ITER) ) 
+    {
+        //z = z * z + c;
+        var Complex produkt;
+        z.mal(z,produkt);
+        produkt.plus(c,z);
+        iter++;
+    }
+
+    if (iter >= MAX_ITER){ return cast(double,MAX_ITER); }
+
+    var double log_zn = m.log(z.norm()) / 2.0;
+    var double nu = m.log(log_zn / m.log(2.0)) / m.log(2.0);
+    return iter + 1 - nu;
+}
+
+void Main::pixelToComplex(int x, int y,&Complex result) 
+{
+    var double real = ( cast(double,x) / cast(double,WIDTH) *  (xMax - xMin)) + xMin;
+    var double imag = ( cast(double,y) / cast(double,HEIGHT) * (yMax - yMin)) + yMin;
+
+    result.re = real;
+    result.im = imag;
+}
+
+
+
+ 
+
+int Main::main()
+{
+   var CommandlineArgs cla;
+   var PrintfClass pfc;
+   if(cla.numberOfArguments() != 8)
+   {
+      pfc.fstr("Benutzung: spr_fractal <MAX_ITERATIONS> <WIDTH> <HEIGHT> <xMin> <xMax> <yMin> <yMax>").pr();
+      pfc.fstr("Beispiel: spr_fractal 1000 500 500 -1.0 1.0 -1.0 1.0").pr();
+      return -1;
+   }
+   cla.getArgument(1,MAX_ITER);
+   cla.getArgument(2,WIDTH);
+   cla.getArgument(3,HEIGHT);
+   cla.getArgument(4,xMin);
+   cla.getArgument(5,xMax);
+   cla.getArgument(6,yMin);
+   cla.getArgument(7,yMax);
+
+
+   
+
+    var BMP_Erzeuger bmpe(WIDTH, HEIGHT);
+    bmpe.erzeugeAnfang();
+    for (var int y = HEIGHT - 1; y >= 0; y = y - 1) 
+    {
+        for (var int x = 0; x < WIDTH; x++) 
+        {
+            var Complex c;
+            this.pixelToComplex(x, y, c);
+            var double iter = this.mandelbrotSmooth(c);
+
+            var int r;
+            var int g;
+            var int b;
+            var double MAX_ITER_DOUBLE = cast(double,MAX_ITER);
+            if (iter >= MAX_ITER_DOUBLE ) 
+            {
+                r = 0;
+                g = 0;
+                b = 0;
+            }
+            else 
+            {
+                var double hue = (360.0 * iter) / MAX_ITER;
+                this.hsvToRgb(hue, 1.0, 1.0, r, g, b);
+            }
+            var int bgr;
+            bgr = b;
+            bgr = bgr << 8;
+            bgr = bgr | g;
+            bgr = bgr << 8;
+            bgr = bgr | r;
+            bmpe.zeichne(x,y,bgr);
+        }        
+    }
+    var SPRFile f("fractal.bmp",0);
+    if(f.systemHandle() > 0)
+    {
+        bmpe.schreibe(f);
+    }
+    else 
+    { 
+       pfc.fstr("konnte Datei nicht zum Schreiben oeffnen").pr();
+       return -1;
+    }
+
+
+   return 1;
+}
+
+

@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Sappeur">
+      <UniqueIdentifier>{c2e9ace8-25c7-4290-9ee9-4861d090cba0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\AppMain.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BMP_Erzeuger.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BMP_Erzeuger_SW.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determineStackMemoryNeeds.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_AppMain.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_BMP_Erzeuger.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_BMP_Erzeuger_SW.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_FunktionalRechner.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_Math.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_OberBMP_Erzeuger.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_Scanner.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_Strings.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_System.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\determStackMemory_ZKNuetzlich.ai.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FunktionalRechner.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Math.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OberBMP_Erzeuger.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_AlphabeticSorter.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_AlphaEntry.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Assigner_String_16.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Assigner_String_128.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Benutzer_Umschalter.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_BMP_Erzeuger.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_BMP_Erzeuger_SW.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_CommandlineArgs.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Compare_String_16.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Compare_String_128.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Complex.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_FunktionEinleser.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Hash_String_16.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Hash_String_128.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Hashable4.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Hashtable4_Hashable4_KeyType4.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_HexPrinter.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Input.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_KeyType4.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Logfile.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Math.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_MultiThreadAdmin.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Mutex.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_MutexInfo.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_NullPtrClassSappeurInternal.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_OberBMP_Erzeuger.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_PrintfClass.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Scanner.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Semaphore.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_SemaphoreInfo.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_SPRFile.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_String_16.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_String_128.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_StringScanf.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_SystemConstants.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_SystemControl.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_SystemTime.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_ThreadInfo.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_ThreadLocalStorage.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_ThreadLocalStorageEntry.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_ThreadLocalStorageList.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_Umgebung.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\placementNewClass_ZKNuetzlich.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Scanner.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Strings.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\System.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZKNuetzlich.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\aes\aes.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\mapping.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\suchoi.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\header_AppMain.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_BMP_Erzeuger.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_BMP_Erzeuger_SW.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_FunktionalRechner.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_Math.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_OberBMP_Erzeuger.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_Scanner.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_Strings.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_System.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\header_ZKNuetzlich.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofAlle.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_AppMain.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_BMP_Erzeuger.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_BMP_Erzeuger_SW.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_FunktionalRechner.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_Math.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_OberBMP_Erzeuger.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_Scanner.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_Strings.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_System.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sizeofDefine_ZKNuetzlich.ai.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\aes\aes.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\mapping.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\sappeur_config.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\stdafx.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Sappeur4x\ausg\haupt\cppMapping\targetver.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ProjektIncludes.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\AlphabeticSorter.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\AppMain.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\AppMain.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\BMP_Erzeuger.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\BMP_Erzeuger.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\BMP_Erzeuger_SW.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\BMP_Erzeuger_SW.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\FunktionalRechner.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\FunktionalRechner.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\Math.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\Math.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\OberBMP_Erzeuger.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\OberBMP_Erzeuger.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\Scanner.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\Scanner.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\String.ad.alt">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\String.ad.m4">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\Strings.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\Strings.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\Strings.ai.m4">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\System.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\System.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\ZKNuetzlich.ad">
+      <Filter>Sappeur</Filter>
+    </None>
+    <None Include="..\..\..\ZKNuetzlich.ai">
+      <Filter>Sappeur</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,241 @@
+Import
+{
+   "Strings.ad",
+   "System.ad",
+   "Scanner.ad"
+}
+
+Scanner::Scanner(SPRFile* f)
+{
+   _f=f;
+   _currentToken=new String_16;
+   _validBytes=0;
+   _currentPtr=0;
+   _filePos=0;
+   _eof=0;
+   this.nextChar();
+   macheHilfsAusgabe = 0;
+   zkEingabeStelle = -1;
+}
+
+Scanner::Scanner(&String_16 eingabe)
+{
+   zkEingabe.assign(eingabe);   
+   zkEingabeStelle = 0;
+   _currentToken=new String_16;
+   macheHilfsAusgabe = 0;
+   _eof=0;
+   this.nextChar();
+}
+
+
+
+int Scanner::isLetter(char c)
+{
+   switch(c)
+   {
+      case 'a':case 'b':case 'c':case 'd':case 'e': case 'f':case 'g':case 'h':case 'i':
+      case 'j':case 'k':case 'l':case 'm':case 'n': case 'o':case 'p':case 'q':case 'r':
+      case 's':case 't':case 'u': case 'v':case 'w':case 'x':case 'y':case 'z':
+      {
+         return 1;
+      };
+      default:{return 0;};
+   }   
+   return 0;
+}
+
+int Scanner::isNumeral(char c)
+{
+   switch(c)
+   {
+       case '0':case '1':case '2':case '3':case '4':case '5':case '6':case '7':case '8': case '9':
+       {
+          return 1;
+       };
+       break;
+   }
+   return 0;
+}
+
+void Scanner::log()
+{
+  if(macheHilfsAusgabe != 0)
+  {
+     var PrintfClass pfc;
+     pfc.fstr("[$ $]").sa(_currentTokenType).sa(_currentToken).pr();
+     if(_currentToken.equals("sinus") == 1)
+     {
+         pfc.fstr("log sinus").pr();
+     }
+  }
+}
+
+void Scanner::setLogging(int ww)
+{
+   macheHilfsAusgabe = ww;
+}
+
+SPRTokenType Scanner::nextToken()
+{
+    if(_eof==1)
+    {    
+      _currentTokenType=TOK_EOF; 
+      return TOK_EOF;
+    }
+    while(1==1)
+    {
+      switch(_currentChar)
+      {
+         case 'a':case 'b':case 'c':case 'd':case 'e':case 'f':case 'g':case 'h':case 'i':
+         case 'j':case 'k':case 'l':case 'm':case 'n':
+         case 'o':case 'p':case 'q':case 'r':case 's':case 't':case 'u':
+         case 'v':case 'w':case 'x':case 'y':case 'z':
+         {
+            _currentToken.clear();
+               
+             do
+             {
+                _currentToken.append(_currentChar);
+                this.nextChar();
+             }
+             while((_eof==0) && ((this.isLetter(_currentChar)==1)  || 
+                                 (this.isNumeral(_currentChar)==1) || 
+                                 (_currentChar=='_')                   ));
+             _currentTokenType=TOK_STRING;   
+             this.log();
+             return TOK_STRING;   
+         };
+         break;
+
+         case '0':case '1':case '2':case '3':case '4':case '5':case '6':case '7':case '8': case '9':
+         {
+             _currentToken.clear();
+             do
+             {
+                _currentToken.append(_currentChar);
+                this.nextChar();
+             }
+             while((_eof==0) && (this.isNumeral(_currentChar)) );     
+             _currentTokenType=TOK_NUMBER;         
+             this.log();
+             return TOK_NUMBER;
+         };
+         break;
+         //case '\t':
+
+         case '\n':
+         case ' ':{ 
+                     do
+                     {
+                        this.nextChar();
+                        if(_eof==1)
+                        {
+                            return TOK_EOF;
+                        }
+                     }
+                     while((_currentChar==' ') /*|| (_currentChar=='\t')*/ || (_currentChar=='\n'));
+                  };
+         break;
+
+         case '+':
+         case '-':
+         case '/':
+         case '*':
+         case '(':
+         case ')':
+         case '{':
+         {
+             _currentToken.clear();
+             _currentToken.append(_currentChar);
+             this.nextChar();
+             _currentTokenType=TOK_OPERATOR;
+             this.log();
+             return TOK_OPERATOR;
+         };
+           
+         case '\0':{
+                       _currentTokenType=TOK_EOF; 
+                       _currentToken.clear();
+                       this.log();
+                       return TOK_EOF;
+                   };
+         default:{ 
+                   _currentTokenType=TOK_NONE; 
+                   _currentToken.assign("<<<<ERROR>>>>");
+                   this.log();
+                   return TOK_NONE;
+                 };
+      }
+    }
+    _currentTokenType=TOK_NONE;
+    _currentToken.assign("<<<<NONE>>>>");
+    this.log();
+    return TOK_NONE;
+}
+
+
+char Scanner::nextChar()
+{
+   if(zkEingabe.length() > 0)
+   {
+      if( zkEingabeStelle < zkEingabe.length() )
+      {
+         _currentChar = zkEingabe.getAt(zkEingabeStelle);
+         zkEingabeStelle++;
+      }
+      else
+      {
+          _eof = 1;
+          _currentChar = '@';
+      }
+   }
+   else
+   {
+     if(_validBytes<=_currentPtr)
+     {
+         var int n=_f.read(_filePos,_buffer.sz,_buffer);
+         if( n < 1)
+         {
+              _eof=1;
+              return cast(char,0);
+         }
+         _validBytes=n;
+         _filePos=_filePos+n;
+     }
+     _currentChar=_buffer[_currentPtr];
+     _currentPtr++;
+   }
+   return _currentChar;
+}
+
+
+void Scanner::getTokenBuf(&String_16* currentToken)
+{
+  currentToken=_currentToken;
+}
+
+void Scanner::UnitTest()
+{
+   var SPRFile* spf = new SPRFile("../testDaten/test.funktional",0);
+   var PrintfClass pfc;
+   if( spf.systemHandle() >= 0)
+   {
+      var Scanner s(spf);
+      var String_16 *wortPuffer;  
+      s.getTokenBuf(wortPuffer);
+      while(s.nextToken())
+      {
+         pfc.fstr("$ ").sa(wortPuffer).pr();
+      }      
+   }
+   else
+   {
+      pfc.fstr("Konnte Testdaten-Datei nicht oeffnen").pr();
+   }
+}
+
+SPRTokenType Scanner::currentTokenType()
+{   
+    return _currentTokenType;
+}

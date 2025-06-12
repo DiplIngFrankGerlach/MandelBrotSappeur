@@ -1,0 +1,35 @@
+Import
+{
+   "Strings.ad",
+   "System.ad",
+   "OberBMP_Erzeuger.ad"
+}
+
+void OberBMP_Erzeuger::erzeugeAnfang()
+{}
+
+void OberBMP_Erzeuger::zeichne(int x, int y, int color_bgr)
+{}
+
+int OberBMP_Erzeuger::pufferGroesse()
+{
+   return -1;
+}
+
+int OberBMP_Erzeuger::schreibe(&SPRFile ausgabe)
+{
+   return -1;
+}
+
+int OberBMP_Erzeuger::breite()
+{
+   return _breite;
+}
+
+int OberBMP_Erzeuger::hoehe()
+{
+   return _hoehe;
+}
+
+
+

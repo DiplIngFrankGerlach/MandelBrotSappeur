@@ -1,0 +1,45 @@
+
+
+
+/*
+class Complex
+{
+   inline_cpp[[ ::std::complex<double> _innen; ]]
+methods:
+   Complex(double real, double imaginaer);
+
+   void mult(&Complex other,&Complex result);
+
+   void plus(&Complex other,&Complex result);
+
+   double abs();
+
+};
+*/
+
+ 
+class Main
+{
+    int MAX_ITER;
+    double xMin;
+    double xMax;
+    double yMin;
+    double yMax;
+    int WIDTH;
+    int HEIGHT;
+  methods:
+     
+
+    double mandelbrotSmooth(&Complex c);
+
+    void hsvToRgb(double h, double s, double v, &int r, &int g, &int b);
+
+    void pixelToComplex(int x, int y,&Complex result);
+    
+
+    int main();
+
+};
+
+
+

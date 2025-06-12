@@ -1,0 +1,25 @@
+
+/* Lese eine Funktion ein und werte sie aus */
+class FunktionEinleser
+{
+   Scanner* wortLeser;
+   String_16* wortPuffer;
+   SPRTokenType wortTyp;
+   int leseFehler;
+   PrintfClass pfc;
+   double wertX;
+
+methods:
+   FunktionEinleser(&String_16 eingabe);
+   FunktionEinleser(SPRFile* f);
+
+   void setzeX(double x);
+
+   double werteAus(int leseNaechstesToken);
+
+   double leseFunktionsEingabe();
+
+   int warFehlerhaft();
+
+   void UnitTest();
+};

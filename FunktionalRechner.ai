@@ -1,0 +1,152 @@
+Import
+{
+   "Strings.ad",
+   "System.ad",
+   "Math.ad",
+   "Scanner.ad",
+   "FunktionalRechner.ad"
+}
+
+FunktionEinleser::FunktionEinleser(&String_16 eingabe)
+{
+   wortLeser = new Scanner(eingabe);
+   wortLeser.setLogging(0);
+   wortLeser.getTokenBuf(wortPuffer);
+   wortTyp =  wortLeser.nextToken();
+   leseFehler = 0;
+}
+
+FunktionEinleser::FunktionEinleser(SPRFile* f)
+{
+   wortLeser = new Scanner(f);      
+   wortLeser.setLogging(1);
+   wortLeser.getTokenBuf(wortPuffer);
+   wortTyp =  wortLeser.nextToken();
+   leseFehler = 0;
+}
+
+void FunktionEinleser::setzeX(double x)
+{
+  wertX = x;
+}
+
+double FunktionEinleser::leseFunktionsEingabe()
+{
+    //pfc.fstr("FunktionEinleser::leseFunktionsEingabe()").pr();
+    //TOK_STRING,TOK_NUMBER,TOK_OPERATOR    
+    if(wortTyp == TOK_NUMBER) //Zahl
+    {
+        //pfc.fstr("NUMBER $").sa(wortPuffer).pr();
+        var double ret = cast(double,wortPuffer.asNumber());       
+        wortTyp = wortLeser.nextToken();
+        return ret;
+    }
+    if((wortTyp == TOK_OPERATOR) && (wortPuffer.equals("(")==1))//Unter-Ausdruck
+    {
+        return this.werteAus(0);
+    }
+    if((wortTyp == TOK_STRING) && (wortPuffer.equals("x")==1) ) //Variable
+    {
+       wortTyp = wortLeser.nextToken();
+       return wertX;
+    }
+    //pfc.fstr("Fehler in leseFunktionsEingabe()").pr(); 
+    leseFehler = 1; 
+    return cast(double,5);
+}
+
+double FunktionEinleser::werteAus(int leseNaechstenToken)
+{  
+   //pfc.fstr("FunktionEinleser::werteAus()").pr();
+   if( (wortTyp == TOK_OPERATOR) && (wortPuffer.equals("(") == 1))
+   {
+       if(wortLeser.nextToken() == TOK_STRING)
+       {
+          var double a;
+          var double b;
+          if(wortPuffer.equals("mal") == 1)
+          {
+             wortTyp = wortLeser.nextToken();
+             a = this.leseFunktionsEingabe();
+             b = this.leseFunktionsEingabe();
+             //pfc.fstr("a $ b $").sa(a).sa(b).pr();
+
+             if((wortTyp == TOK_OPERATOR) && (wortPuffer.equals(")") == 1) )
+             {
+                wortTyp = wortLeser.nextToken(); 
+                //pfc.fstr("Erfolg").pr();
+                return a*b;
+             }
+             else
+             {
+                pfc.fstr(") erwartet / mal").pr();
+             }
+          }
+          if(wortPuffer.equals("sinus") == 1)
+          {
+             wortTyp = wortLeser.nextToken();
+             a = this.leseFunktionsEingabe();
+             if((wortTyp == TOK_OPERATOR) && (wortPuffer.equals(")") == 1) )
+             {
+                wortTyp = wortLeser.nextToken(); 
+                //pfc.fstr("Erfolg").pr();
+                var Math m;
+                //pfc.fstr("$").sa(a).pr();
+                return m.sinus(a);
+             }
+             else
+             {
+                pfc.fstr(") erwartet / sinus").pr();
+             }
+          }
+          if(wortPuffer.equals("durch") == 1)
+          {
+             wortTyp = wortLeser.nextToken();
+             a = this.leseFunktionsEingabe();
+             b = this.leseFunktionsEingabe();
+             if((wortTyp == TOK_OPERATOR) && (wortPuffer.equals(")") == 1) )
+             {
+                wortTyp = wortLeser.nextToken(); 
+                //pfc.fstr("Erfolg").pr();
+                return a/b;
+             }
+             else
+             {
+                pfc.fstr(") erwartet / durch").pr();
+             }
+          }
+          pfc.fstr("unbekannte Funktion $ $").sa(wortTyp).sa(wortPuffer).pr();
+       }
+       
+   }
+   pfc.fstr("Fehler in FunktionenEinleser").pr();
+   leseFehler = 1;
+   return cast(double,0);
+}
+
+void FunktionEinleser::UnitTest()
+{
+   var SPRFile* spf = new SPRFile("../testDaten/test.funktional",0);
+   if( spf.systemHandle() >= 0)
+   {
+      var double x;
+      var double inc = 0.1;
+      var double max = cast(double,300);
+      for(x=cast(double,0); x <= max; x = x + inc)
+      {
+         var FunktionEinleser fe(spf);
+         fe.setzeX(x);
+         var double y = fe.werteAus(1);
+         pfc.fstr("$;$").sa(x).sa(y).pr();  
+      }
+   }
+   else
+   {
+      pfc.fstr("Konnte Testdaten-Datei nicht oeffnen").pr();
+   }
+}
+
+int FunktionEinleser::warFehlerhaft()
+{
+   return leseFehler;
+}

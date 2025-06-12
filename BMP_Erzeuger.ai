@@ -1,0 +1,211 @@
+Import 
+{ 
+   "Strings.ad",
+   "System.ad",
+   "Scanner.ad",
+   "FunktionalRechner.ad",
+   "OberBMP_Erzeuger.ad",
+   "BMP_Erzeuger.ad" 
+}
+
+BMP_Erzeuger::BMP_Erzeuger(int groesseX, int groesseY)
+{
+  _breite = groesseX;
+  _hoehe = groesseY;
+  _breiteZeileOktets = (((_breite * 24) + 31)/32)*4;//breite in Oktet einer Speicherzeile
+  pfc.fstr("breite Speicherzeile: $").sa(_breiteZeileOktets).pr();
+  bildPuffer = new char [(_breiteZeileOktets*groesseY*3)+54];
+}
+
+void BMP_Erzeuger::writeUI32(&int pos,int value)
+{
+    bildPuffer[pos] = cast(char,value & 0xFF);
+    pos++;
+    bildPuffer[pos] = cast(char,(value >> 8)  & 0xFF);
+    pos++;
+    bildPuffer[pos] = cast(char,(value >> 16) & 0xFF);
+    pos++;
+    bildPuffer[pos] = cast(char,(value >> 24) & 0xFF);
+    pos++;
+}
+
+void BMP_Erzeuger::zeichne(int x, int y, int color_bgr)
+{
+    var int index =  (y * _breiteZeileOktets) + (x * 3);
+
+    bildPuffer[index+54]   = cast(char,(color_bgr >> 16) & 0xFF);
+    bildPuffer[index+54+1] = cast(char,(color_bgr >> 8)  & 0xFF);
+    bildPuffer[index+54+2] = cast(char,color_bgr         & 0xFF);
+}
+
+
+
+
+void BMP_Erzeuger::erzeugeAnfang()
+{
+    var int i=0;
+    var int pixel_width =  _breite;
+    var int pixel_height = _hoehe;
+    var int file_size = 54 + (_breiteZeileOktets*pixel_height);
+    bildPuffer[i] = 'B';
+    i++;
+    bildPuffer[i] = 'M';
+    i++;
+    this.writeUI32(i,file_size);
+    if( i != 6 )
+    {
+       pfc.fstr("assert 1 fehlgeschlagen").pr(); 
+    }
+    bildPuffer[i] = cast(char,0); //6
+    i++;
+    bildPuffer[i] = cast(char,0);
+    i++;
+    bildPuffer[i] = cast(char,0);
+    i++;
+    bildPuffer[i] = cast(char,0);
+    i++;
+    bildPuffer[i] = cast(char,54);//pixel offset
+    i++;
+    bildPuffer[i] = cast(char,0);
+    i++;
+    bildPuffer[i] = cast(char,0);
+    i++;
+    bildPuffer[i] = cast(char,0); //13
+    i++;
+    if( i != 14 )
+    {
+       pfc.fstr("assert 2 fehlgeschlagen").pr(); 
+    }
+    this.writeUI32(i,40); //BITMAPINFOHEADER size
+    this.writeUI32(i,pixel_width);
+    this.writeUI32(i,pixel_height);
+    if( i != 26)
+    {
+       pfc.fstr("assert 3 fehlgeschlagen").pr(); 
+    }
+    bildPuffer[i] = cast(char,1);//number of color planess
+    i++;
+    bildPuffer[i] = cast(char,0);
+    i++;
+    bildPuffer[i] = cast(char,24);//The number of bits per pixel
+    i++;
+    bildPuffer[i] = cast(char,0);//NO Compression
+    i++;
+    this.writeUI32(i,0);//Disable Compression
+    if( i != 34)
+    {
+       pfc.fstr("assert 4 fehlgeschlagen").pr(); 
+    }
+    this.writeUI32(i,file_size - 54);//Size of raw pixel data
+    this.writeUI32(i,_breite);//horizontal resolution
+    this.writeUI32(i,_hoehe);//vertical resolution
+    if( i != 46)
+    {
+       pfc.fstr("assert 5 fehlgeschlagen").pr(); 
+    }
+    this.writeUI32(i,0);//The number of colors, leave at 0 to default to all colors
+    this.writeUI32(i,0);//The important colors, leave at 0 to default to all colors
+    if( i != 54)
+    {
+       pfc.fstr("assert 6 fehlgeschlagen").pr(); 
+    }
+
+
+    //blank out the bitmap
+    for(;i<file_size;i++){bildPuffer[i] = cast(char,0);}
+    if( i != file_size )
+    {
+       pfc.fstr("assert 7 fehlgeschlagen").pr(); 
+    }
+
+}
+
+void BMP_Erzeuger::erzeugeSinus()
+{
+    this.erzeugeAnfang();
+    var int pixel_width =  _breite;
+    var int pixel_height = _hoehe;
+    var int file_size = 54 + (pixel_width*pixel_height*3);
+    var int i;
+    for(i=0; i < pixel_width; i++)
+    {
+        var int x = i;
+        var int y;
+        inline_cpp[[
+            y = (_hoehe/2)+sin(float(x)/pixel_width*2.0f*3.1415f)*(_hoehe/4);
+        ]]
+
+        this.zeichne(x,y,0xFFFFFF);
+    }
+
+    var SPRFile file("sinus.bmp",0);
+    file.write(0,file_size,bildPuffer);
+    file.close();
+}
+
+void BMP_Erzeuger::erzeugeAusAbbildung(&String_16 abbildung,&*char bp[],&int groessePuffer)
+{
+    this.erzeugeAnfang();
+    var int pixel_width =  _breite;
+    var int pixel_height = _hoehe;
+    var int file_size = 54 + (pixel_width*pixel_height*3);
+    groessePuffer = file_size; 
+    var int i;
+
+    for(i=0; i < pixel_width; i++)
+    {
+         var double x = cast(double,i);
+         x = x / cast(double,9);
+         var FunktionEinleser fe(abbildung);
+         fe.setzeX(x);
+         var double y = (fe.werteAus(1) * cast(double,200)) + (pixel_height/2);
+         if(fe.warFehlerhaft()== 1)
+         {
+           i = pixel_width;
+         }
+         //pfc.fstr("$;$").sa(x).sa(y).pr();
+         var double min = 0;
+         var double max = 999;
+         if( (y > min) && ( y < max) )
+         {
+            this.zeichne(i,y,0xFFFFFF);
+         }
+    }
+    bp = bildPuffer;
+}
+
+void BMP_Erzeuger::erzeugeAusAbbildung()
+{
+    this.erzeugeAnfang();
+    var int pixel_width =  _breite;
+    var int pixel_height = _hoehe;
+    var int file_size = 54 + (pixel_width*pixel_height*3);
+    var int i;
+
+    for(i=0; i < pixel_width; i++)
+    {
+         var double x = cast(double,i);
+         x = x / cast(double,9);
+         //var SPRFile* spf = new SPRFile("../testDaten/test.funktional",0);
+         //var FunktionEinleser fe(spf);
+         var String_16 abb("(durch (mal (durch x 10) (sinus x)) 10)");
+         var FunktionEinleser fe(abb);
+         fe.setzeX(x);
+         var double y = (fe.werteAus(1) * cast(double,200)) + (pixel_height/2);
+         pfc.fstr("$;$").sa(x).sa(y).pr();
+         this.zeichne(i,y,0xFFFFFF);
+
+    }
+
+    var SPRFile file("sinus2.bmp",0);
+    file.write(0,file_size,bildPuffer);
+    file.close();
+
+}
+
+int BMP_Erzeuger::schreibe(&SPRFile ausgabe)
+{
+    return ausgabe.write(0,bildPuffer.sz,bildPuffer);
+}
+
+

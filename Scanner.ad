@@ -1,0 +1,42 @@
+/********************************************************* 
+* This file is part of the Sappeur project.
+* Source code is licensed according to the terms of the
+* Sappeur License. The Sappeur license is styled like
+* the FreeBSD license.
+* 
+*********************************************************/
+
+enum SPRTokenType{TOK_EOF,TOK_NONE,TOK_STRING,TOK_NUMBER,TOK_OPERATOR};
+
+class Scanner{
+   char _buffer[10000];
+   int _validBytes;
+   int _currentPtr;
+   int _filePos;
+   SPRFile* _f;
+   String_16* _currentToken;
+   char _currentChar;
+   int _eof;
+   SPRTokenType _currentTokenType;
+
+   int macheHilfsAusgabe;
+
+   String_16 zkEingabe;//anderweitige Eingabe, also nicht per Datei 
+   int zkEingabeStelle;
+methods:
+   Scanner(&String_16 eingabe);
+   Scanner(SPRFile* f);
+   int isLetter(char c);
+   
+   int isNumeral(char c);
+   SPRTokenType nextToken();
+   SPRTokenType currentTokenType();
+   char nextChar();
+   void getTokenBuf(&String_16* currentToken);
+
+   void setLogging(int ww);
+
+   void log();
+
+   void UnitTest();
+};
