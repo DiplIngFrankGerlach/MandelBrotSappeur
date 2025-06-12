@@ -5,7 +5,7 @@
 
 *Computed using c:\> MB_SPR.exe  1000 500 500 -1.0 1.0 -1.0 1.0*
 
-This project computs a Mandelbrot Fractal in the Sappeur programming language.
+This project computes a Mandelbrot Fractal in the Sappeur programming language.
 
 The Sappeur language: https://sappeur.di-fg.de
 
