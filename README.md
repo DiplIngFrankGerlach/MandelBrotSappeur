@@ -3,7 +3,7 @@
 # Fractal Computation in Sappeur
 ![frac](bilder/fractal.bmp "Ein Fraktal")
 
-Computed using c:\> MB_SPR.exe  1000 500 500 -1.0 1.0 -1.0 1.0
+*Computed using c:\> MB_SPR.exe  1000 500 500 -1.0 1.0 -1.0 1.0*
 
 This project computs a Mandelbrot Fractal in the Sappeur programming language.
 
