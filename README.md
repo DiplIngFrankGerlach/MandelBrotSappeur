@@ -1,6 +1,6 @@
  
 
-# Fractal Computation in Sappeur
+# Fractal Computation Using the Sappeur Programming Language
 ![frac](bilder/fractal.bmp "Ein Fraktal")
 
 *Computed using c:\> MB_SPR.exe  1000 500 500 -1.0 1.0 -1.0 1.0*
