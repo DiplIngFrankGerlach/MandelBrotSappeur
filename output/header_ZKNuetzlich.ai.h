@@ -1,5 +1,5 @@
 class ThreadLocalStorageEntry;
-#include "c:/Sappeur4x/ausg/haupt\cppMapping\mapping.h"
+#include "c:/tmp/ttt/Sappeur_4.11\cppMapping\mapping.h"
 class SAPPEUR_DLL_EXPORT_A String_16: public SPRObject {
 public:
 void addRef(){SPRObject::addRef();}
