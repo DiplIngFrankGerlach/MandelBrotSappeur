@@ -16,7 +16,7 @@
 compile()
 {
     echo $1
-    ${SPR_VERZ}/compiler/windows/Sappeur_Compiler_4.x/x64/Release/sc_win.exe $1 -outputPath output -operatingSystem windows -sappeurDirectory ${SPR_VERZ} 
+    ${SPR_VERZ}/sc_win.exe $1 -outputPath output -operatingSystem windows -sappeurDirectory ${SPR_VERZ} 
 }
 
 ########################################################
@@ -24,8 +24,8 @@ compile()
 ########################################################
 compileBG()
 {
-    echo "tue nichts"
-    # OLD ${SPR_VERZ}/compiler/SPRcomp $1 -outputPath output -operatingSystem windows -sappeurDirectory ${SPR_VERZ} &
+    echo "ABGESCHALTET"
+    # ${SPR_VERZ}/compiler/SPRcomp $1 -outputPath output -operatingSystem Linux -sappeurDirectory ${SPR_VERZ} &
 }
 
 ######################################################
@@ -65,12 +65,12 @@ killCoordinator()
    OS=$(uname -s)
 
    if [[ "$OS" == "Linux" ]]; then
-      pid=`ps -ef|egrep SPRCoordinator|egrep $USER|egrep -v grep|sed 's/ \+/ /g'|cut -d " " -f2`
+      pid=`ps -ef|egrep  SPRCoordinator|egrep $USER|egrep -v grep|sed 's/ \+/ /g'|cut -d " " -f2`
       if [[ $pid =~ ^[0-9]+$ ]]; then #if pid valid
          kill $pid
       fi 
    elif [[ "$OS" == "CYGWIN"* ]]; then
-      pid=`ps -ef|egrep SPRCoordinator|egrep $USER|egrep -v grep|sed 's/ \+/ /g'|cut -d " " -f3`
+      pid=`ps -ef|egrep -a SPRCoordinator|egrep -a $USER|egrep -va grep|sed 's/ \+/ /g'|cut -d " " -f3`
       if [[ $pid =~ ^[0-9]+$ ]]; then  #if pid valid
          kill $pid
       fi 
@@ -84,8 +84,10 @@ killCoordinator
 ###################################################################################################################
 # Beende den Sappeur Coordinator und starte neu
 ###############################################
-
-${SPR_VERZ}/compiler/windows/SPRCoordinator/x64/Release/SPRCoordinator.exe &
+altDir=$PWD
+cd ${SPR_VERZ}
+./SPRCoordinator.exe &
+cd $altDir
 
 
 ###################################################################################################################

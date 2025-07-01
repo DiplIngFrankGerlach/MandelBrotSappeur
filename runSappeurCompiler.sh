@@ -15,7 +15,7 @@
 ###################################################################################################################
 # Setze das Sappeur Verzeichnis
 ###############################
-export SPR_VERZ=c:/Sappeur4x/ausg/haupt
+export SPR_VERZ=c:/tmp/ttt/Sappeur_4.11
 
 
 
@@ -27,7 +27,7 @@ killCoordinator
 # Beende den Sappeur Coordinator und starte neu
 ###############################################
 
-${SPR_VERZ}/compiler/SPRCoordinator &
+${SPR_VERZ}/SPRCoordinator &
 
 
 

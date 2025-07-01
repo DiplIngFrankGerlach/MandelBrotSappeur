@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\output\\MB_SPR\\",
+  "WorkspaceRootPath": "C:\\tmp\\MandelBrotSappeur\\output\\MB_SPR\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{FF371ADA-8CFE-44AE-B401-F00EFC25EFCC}|MB_SPR\\MB_SPR.vcxproj|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Scanner.ai||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
@@ -40,6 +41,9 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF371ADA-8CFE-44AE-B401-F00EFC25EFCC}|MB_SPR\\MB_SPR.vcxproj|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad||{8B382828-6202-11D1-8870-0000F87579D2}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\ZKNuetzlich.ai||{8B382828-6202-11D1-8870-0000F87579D2}"
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ai||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -82,6 +86,36 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\header_BMP_Erzeuger.ai.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\System.ai||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\String.ad.m4||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ai.m4||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ad||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Scanner.ai||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\OberBMP_Erzeuger.ad||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\FunktionalRechner.ai||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AppMain.ad||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\BMP_Erzeuger.ai||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -124,16 +158,17 @@
               "DocumentIndex": 5,
               "Title": "ZKNuetzlich.ai",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\ZKNuetzlich.ai",
-              "RelativeDocumentMoniker": "..\\..\\ZKNuetzlich.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\ZKNuetzlich.ai",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\ZKNuetzlich.ai",
-              "RelativeToolTip": "..\\..\\ZKNuetzlich.ai",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\ZKNuetzlich.ai",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T15:15:50.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
               "Title": "String.ad.m4",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\String.ad.m4",
@@ -226,24 +261,114 @@
               "RelativeDocumentMoniker": "..\\..\\System.ai",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\System.ai",
               "RelativeToolTip": "..\\..\\System.ai",
+=======
+              "DocumentIndex": 15,
+              "Title": "System.ai",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\System.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\System.ai",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\System.ai",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\System.ai",
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T15:15:49.519Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 12,
               "Title": "AlphabeticSorter.ad",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad",
               "RelativeDocumentMoniker": "..\\..\\AlphabeticSorter.ad",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad",
               "RelativeToolTip": "..\\..\\AlphabeticSorter.ad",
+=======
+              "DocumentIndex": 16,
+              "Title": "String.ad.m4",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\String.ad.m4",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\String.ad.m4",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\String.ad.m4",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\String.ad.m4",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:47.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Strings.ai.m4",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ai.m4",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ai.m4",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ai.m4",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ai.m4",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:43.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Strings.ad",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ad",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ad",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ad",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Strings.ad",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:42.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Scanner.ai",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Scanner.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Scanner.ai",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Scanner.ai",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\Scanner.ai",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:41.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OberBMP_Erzeuger.ad",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\OberBMP_Erzeuger.ad",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\OberBMP_Erzeuger.ad",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\OberBMP_Erzeuger.ad",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\OberBMP_Erzeuger.ad",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:41.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FunktionalRechner.ai",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\FunktionalRechner.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\FunktionalRechner.ai",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\FunktionalRechner.ai",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\FunktionalRechner.ai",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:40.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AlphabeticSorter.ad",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AlphabeticSorter.ad",
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T15:15:39.389Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "AppMain.ad",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AppMain.ad",
@@ -258,166 +383,245 @@
             {
               "$type": "Document",
               "DocumentIndex": 15,
+=======
+              "DocumentIndex": 23,
+              "Title": "AppMain.ad",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AppMain.ad",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AppMain.ad",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AppMain.ad",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\AppMain.ad",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:38.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BMP_Erzeuger.ai",
+              "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\BMP_Erzeuger.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\BMP_Erzeuger.ai",
+              "ToolTip": "C:\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\BMP_Erzeuger.ai",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\MandelBrotSappeur\\BMP_Erzeuger.ai",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T15:15:36.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "determStackMemory_ZKNuetzlich.ai.cpp",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\determStackMemory_ZKNuetzlich.ai.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\output\\determStackMemory_ZKNuetzlich.ai.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\determStackMemory_ZKNuetzlich.ai.cpp",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\determStackMemory_ZKNuetzlich.ai.cpp",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\output\\determStackMemory_ZKNuetzlich.ai.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\determStackMemory_ZKNuetzlich.ai.cpp",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-12T14:06:01.565Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 16,
+=======
+              "DocumentIndex": 4,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "Strings.ai.m4",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\Strings.ai.m4",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\Strings.ai.m4",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\Strings.ai.m4",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\Strings.ai.m4",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\Strings.ai.m4",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\Strings.ai.m4",
               "ViewState": "AgIAAPACAAAAAAAAAAAQwAkDAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T14:05:58.475Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 17,
+=======
+              "DocumentIndex": 5,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "String.ad.m4",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\String.ad.m4",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\String.ad.m4",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\String.ad.m4",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\String.ad.m4",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\String.ad.m4",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\String.ad.m4",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAGcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T14:05:48.904Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 18,
+=======
+              "DocumentIndex": 6,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "System.ad",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ad",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\System.ad",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ad",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ad",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\System.ad",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ad",
               "ViewState": "AgIAAKAAAAAAAAAAAAAAALwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T14:01:22.984Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 19,
+=======
+              "DocumentIndex": 7,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "Math.cpp",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\Math.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\output\\Math.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\Math.cpp",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\Math.cpp",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\output\\Math.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\Math.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-12T13:10:42.199Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 20,
+=======
+              "DocumentIndex": 8,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "AppMain.ad",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ad",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\AppMain.ad",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ad",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ad",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\AppMain.ad",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ad",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T11:21:45.73Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 13,
+=======
+              "DocumentIndex": 1,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "AppMain.ai",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ai",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\AppMain.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ai",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ai",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\AppMain.ai",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\AppMain.ai",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T11:10:00.286Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 21,
+=======
+              "DocumentIndex": 9,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "BMP_Erzeuger.ai",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\BMP_Erzeuger.ai",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\BMP_Erzeuger.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\BMP_Erzeuger.ai",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\BMP_Erzeuger.ai",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\BMP_Erzeuger.ai",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\BMP_Erzeuger.ai",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T13:35:38.395Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 22,
+=======
+              "DocumentIndex": 10,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "System.ai",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ai",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\System.ai",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ai",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ai",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\System.ai",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\System.ai",
               "ViewState": "AgIAABIEAAAAAAAAAAAQwDYEAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-12T13:20:34.554Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 23,
+=======
+              "DocumentIndex": 11,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "placementNewClass_AlphabeticSorter.cpp",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_AlphabeticSorter.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\output\\placementNewClass_AlphabeticSorter.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_AlphabeticSorter.cpp",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_AlphabeticSorter.cpp",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\output\\placementNewClass_AlphabeticSorter.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_AlphabeticSorter.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-12T08:07:51.397Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 24,
+=======
+              "DocumentIndex": 12,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "placementNewClass_Assigner_String_128.cpp",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_Assigner_String_128.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\output\\placementNewClass_Assigner_String_128.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_Assigner_String_128.cpp",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_Assigner_String_128.cpp",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\output\\placementNewClass_Assigner_String_128.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_Assigner_String_128.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-12T08:09:36.312Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 25,
+=======
+              "DocumentIndex": 13,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "placementNewClass_BMP_Erzeuger.cpp",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_BMP_Erzeuger.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\output\\placementNewClass_BMP_Erzeuger.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_BMP_Erzeuger.cpp",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_BMP_Erzeuger.cpp",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\output\\placementNewClass_BMP_Erzeuger.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\placementNewClass_BMP_Erzeuger.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-12T08:09:37.078Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 14,
+=======
+              "DocumentIndex": 2,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "mapping.h",
               "DocumentMoniker": "C:\\Sappeur4x\\ausg\\haupt\\cppMapping\\mapping.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Sappeur4x\\ausg\\haupt\\cppMapping\\mapping.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Sappeur4x\\ausg\\haupt\\cppMapping\\mapping.h",
               "ToolTip": "C:\\Sappeur4x\\ausg\\haupt\\cppMapping\\mapping.h",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Sappeur4x\\ausg\\haupt\\cppMapping\\mapping.h",
+              "RelativeToolTip": "..\\..\\..\\..\\Sappeur4x\\ausg\\haupt\\cppMapping\\mapping.h",
               "ViewState": "AgIAAEoDAAAAAAAAAAAewGQDAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-12T07:48:56.798Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 26,
+=======
+              "DocumentIndex": 14,
+>>>>>>> 9e0a792a2301dc0bfa81f0e6a4cc82544170bd2c
               "Title": "header_BMP_Erzeuger.ai.h",
               "DocumentMoniker": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\header_BMP_Erzeuger.ai.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\Mandelbrot\\output\\header_BMP_Erzeuger.ai.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\header_BMP_Erzeuger.ai.h",
               "ToolTip": "C:\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\header_BMP_Erzeuger.ai.h",
-              "RelativeToolTip": "..\\..\\..\\Mandelbrot\\output\\header_BMP_Erzeuger.ai.h",
+              "RelativeToolTip": "..\\..\\..\\..\\cygwin64\\home\\bjafrge\\Mandelbrot\\output\\header_BMP_Erzeuger.ai.h",
               "ViewState": "AgIAAEACAAAAAAAAAAAwwE8CAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-12T07:44:01.775Z"
